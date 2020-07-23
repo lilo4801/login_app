@@ -1,0 +1,11 @@
+<h1>HELLO</h1>
+<label for="">Welcome</label>
+     <%= link_to @current_user.mail, user_path(@current_user) %><br>
+     <label for="">List Users</label>
+     <table class="table">
+       <thead>
+         <th>ID</th>
+         <th>User Mail</th>
+       </thead>
+       <%= render @users %>
+     </table>
